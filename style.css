@@ -461,6 +461,32 @@ nav {
   color: var(--col4);
   text-align: center;
 }
+#goTopbtn {
+  position: fixed;
+  color: var(--col4);
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  background: var(--col4);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  outline: none;
+  border: none;
+  z-index: 10000;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+#goTopbtn.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+#goTopbtn i {
+  color: var(--colb);
+}
 
 /* Responsiveness */
 @media screen and (max-width: 450px) {
