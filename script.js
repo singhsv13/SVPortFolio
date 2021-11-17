@@ -58,3 +58,17 @@ function deletingEffect() {
 
 typingEffect();
 
+// scrolltotp button
+window.addEventListener('scroll', () => {
+    let scroll = document.querySelector("#goTopbtn");
+    scroll.classList.toggle("active", window.scrollY > 300)
+});
+const scrolltotop = document.getElementById("goTopbtn");
+scrolltotop.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    });
+
+});
